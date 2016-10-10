@@ -242,7 +242,7 @@ a:hover {
             font-family: "Panton Bold";
             color: #fff;
             text-decoration: none;
-            margin: 1em; }
+            margin: 1em 0.5em; }
             .welcome .header .menu .list .item .item-link:hover, .welcome .header .menu .list .item .item-link .active {
               color: #F0CB1F; }
     .welcome .header .menu-scroll {
@@ -269,14 +269,25 @@ a:hover {
       .welcome .header .menu-scroll .menu {
         float: right; }
     @media (max-width: 905px) {
+        .hide-mobile {
+            display: none !important;
+        }
       .welcome .header .menu .list {
+          margin-left: 3em;
         font-size: .8em;
         vertical-align: middle; } }
     @media (max-width: 767px) {
       .welcome .header .menu-scroll {
-        display: none; }
-      .welcome .header .menu {
-        display: none; } }
+        display: none;
+    }
+    .welcome .header .menu {
+        margin-top: 3.5em;
+        float: none;
+    }
+    .hide-mobile {
+        display: none !important;
+    }
+    }
   .welcome .info {
     position: relative;
     padding: 8em 0 4em 0; }
